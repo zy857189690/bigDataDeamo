@@ -1,0 +1,355 @@
+2020-07-13 17:14:54 [FATAL] - org.apache.hadoop.conf.Configuration -Configuration.java(2644) -error parsing conf core-site.xml
+org.xml.sax.SAXParseException; systemId: file:/C:/Users/Administrator/IdeaProjects/digdeamo/Hadoop-mapreduce/target/classes/core-site.xml; lineNumber: 1; columnNumber: 7; The processing instruction target matching "[xX][mM][lL]" is not allowed.
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:2480)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:2468)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2539)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2492)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2405)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:981)
+	at org.apache.hadoop.mapred.JobConf.checkAndWarnDeprecation(JobConf.java:2007)
+	at org.apache.hadoop.mapred.JobConf.<init>(JobConf.java:449)
+	at org.apache.hadoop.mapreduce.Job.getInstance(Job.java:184)
+	at org.apache.hadoop.mapreduce.Job.getInstance(Job.java:204)
+	at WordCountMain.main(WordCountMain.java:26)
+2020-07-13 17:16:50 [FATAL] - org.apache.hadoop.conf.Configuration -Configuration.java(2644) -error parsing conf core-site.xml
+org.xml.sax.SAXParseException; systemId: file:/C:/Users/Administrator/IdeaProjects/digdeamo/Hadoop-mapreduce/target/classes/core-site.xml; lineNumber: 1; columnNumber: 7; The processing instruction target matching "[xX][mM][lL]" is not allowed.
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:2480)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:2468)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2539)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2492)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2405)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:981)
+	at org.apache.hadoop.mapred.JobConf.checkAndWarnDeprecation(JobConf.java:2007)
+	at org.apache.hadoop.mapred.JobConf.<init>(JobConf.java:449)
+	at org.apache.hadoop.mapreduce.Job.getInstance(Job.java:184)
+	at org.apache.hadoop.mapreduce.Job.getInstance(Job.java:204)
+	at WordCountMain.main(WordCountMain.java:26)
+2020-07-13 17:17:15 [ERROR] - org.apache.hadoop.util.Shell -Shell.java(397) -Failed to locate the winutils binary in the hadoop binary path
+java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:379)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:394)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:387)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:80)
+	at org.apache.hadoop.security.SecurityUtil.getAuthenticationMethod(SecurityUtil.java:611)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:273)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:261)
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:791)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:761)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:634)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.<init>(JobContextImpl.java:72)
+	at org.apache.hadoop.mapreduce.Job.<init>(Job.java:142)
+	at org.apache.hadoop.mapreduce.Job.getInstance(Job.java:185)
+	at org.apache.hadoop.mapreduce.Job.getInstance(Job.java:204)
+	at WordCountMain.main(WordCountMain.java:26)
+2020-07-13 17:17:15 [ WARN] - org.apache.hadoop.util.NativeCodeLoader -NativeCodeLoader.java(62) -Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-07-13 17:17:17 [ INFO] - org.apache.hadoop.conf.Configuration.deprecation -Configuration.java(1173) -session.id is deprecated. Instead, use dfs.metrics.session-id
+2020-07-13 17:17:17 [ INFO] - org.apache.hadoop.metrics.jvm.JvmMetrics -JvmMetrics.java(76) -Initializing JVM Metrics with processName=JobTracker, sessionId=
+2020-07-13 17:29:41 [ERROR] - org.apache.hadoop.util.Shell -Shell.java(397) -Failed to locate the winutils binary in the hadoop binary path
+java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:379)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:394)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:387)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:80)
+	at org.apache.hadoop.security.SecurityUtil.getAuthenticationMethod(SecurityUtil.java:611)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:273)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:261)
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:791)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:761)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:634)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.<init>(JobContextImpl.java:72)
+	at org.apache.hadoop.mapreduce.Job.<init>(Job.java:142)
+	at org.apache.hadoop.mapreduce.Job.getInstance(Job.java:185)
+	at org.apache.hadoop.mapreduce.Job.getInstance(Job.java:204)
+	at WordCountMain.main(WordCountMain.java:26)
+2020-07-13 17:29:41 [ WARN] - org.apache.hadoop.util.NativeCodeLoader -NativeCodeLoader.java(62) -Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-07-13 17:29:42 [ INFO] - org.apache.hadoop.conf.Configuration.deprecation -Configuration.java(1173) -session.id is deprecated. Instead, use dfs.metrics.session-id
+2020-07-13 17:29:42 [ INFO] - org.apache.hadoop.metrics.jvm.JvmMetrics -JvmMetrics.java(76) -Initializing JVM Metrics with processName=JobTracker, sessionId=
+2020-07-13 17:34:33 [ WARN] - org.apache.hadoop.util.NativeCodeLoader -NativeCodeLoader.java(62) -Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-07-13 17:34:39 [ INFO] - org.apache.hadoop.conf.Configuration.deprecation -Configuration.java(1173) -session.id is deprecated. Instead, use dfs.metrics.session-id
+2020-07-13 17:34:39 [ INFO] - org.apache.hadoop.metrics.jvm.JvmMetrics -JvmMetrics.java(76) -Initializing JVM Metrics with processName=JobTracker, sessionId=
+2020-07-13 17:36:35 [ WARN] - org.apache.hadoop.util.NativeCodeLoader -NativeCodeLoader.java(62) -Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-07-13 17:36:36 [ INFO] - org.apache.hadoop.conf.Configuration.deprecation -Configuration.java(1173) -session.id is deprecated. Instead, use dfs.metrics.session-id
+2020-07-13 17:36:36 [ INFO] - org.apache.hadoop.metrics.jvm.JvmMetrics -JvmMetrics.java(76) -Initializing JVM Metrics with processName=JobTracker, sessionId=
+2020-07-13 17:36:38 [ WARN] - org.apache.hadoop.mapreduce.JobResourceUploader -JobResourceUploader.java(64) -Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-07-13 17:36:38 [ WARN] - org.apache.hadoop.mapreduce.JobResourceUploader -JobResourceUploader.java(171) -No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2020-07-13 17:36:38 [ INFO] - org.apache.hadoop.mapreduce.lib.input.FileInputFormat -FileInputFormat.java(283) -Total input paths to process : 1
+2020-07-13 17:36:38 [ INFO] - org.apache.hadoop.mapreduce.JobSubmitter -JobSubmitter.java(198) -number of splits:1
+2020-07-13 17:36:39 [ INFO] - org.apache.hadoop.mapreduce.JobSubmitter -JobSubmitter.java(287) -Submitting tokens for job: job_local564626938_0001
+2020-07-13 17:36:39 [ INFO] - org.apache.hadoop.mapreduce.JobSubmitter -JobSubmitter.java(249) -Cleaning up the staging area file:/tmp/hadoop-Administrator/mapred/staging/Administrator564626938/.staging/job_local564626938_0001
+2020-07-13 17:41:07 [ WARN] - org.apache.hadoop.util.NativeCodeLoader -NativeCodeLoader.java(62) -Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-07-13 17:41:08 [ INFO] - org.apache.hadoop.conf.Configuration.deprecation -Configuration.java(1173) -session.id is deprecated. Instead, use dfs.metrics.session-id
+2020-07-13 17:41:08 [ INFO] - org.apache.hadoop.metrics.jvm.JvmMetrics -JvmMetrics.java(76) -Initializing JVM Metrics with processName=JobTracker, sessionId=
+2020-07-13 17:41:09 [ WARN] - org.apache.hadoop.mapreduce.JobResourceUploader -JobResourceUploader.java(64) -Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-07-13 17:41:09 [ WARN] - org.apache.hadoop.mapreduce.JobResourceUploader -JobResourceUploader.java(171) -No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2020-07-13 17:41:09 [ INFO] - org.apache.hadoop.mapreduce.lib.input.FileInputFormat -FileInputFormat.java(283) -Total input paths to process : 1
+2020-07-13 17:41:09 [ INFO] - org.apache.hadoop.mapreduce.JobSubmitter -JobSubmitter.java(198) -number of splits:1
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapreduce.JobSubmitter -JobSubmitter.java(287) -Submitting tokens for job: job_local2089045160_0001
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1294) -The url to track the job: http://localhost:8080/
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1339) -Running job: job_local2089045160_0001
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(471) -OutputCommitter set in config null
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter -FileOutputCommitter.java(108) -File Output Committer Algorithm version is 1
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(489) -OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(448) -Waiting for map tasks
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(224) -Starting task: attempt_local2089045160_0001_m_000000_0
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter -FileOutputCommitter.java(108) -File Output Committer Algorithm version is 1
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.yarn.util.ProcfsBasedProcessTree -ProcfsBasedProcessTree.java(192) -ProcfsBasedProcessTree currently is supported only on Linux.
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.Task -Task.java(612) - Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@3db76561
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(756) -Processing split: file:/C:/Users/Administrator/Desktop/mapreduce/input/a.txt:0+22
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1205) -(EQUATOR) 0 kvi 26214396(104857584)
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(998) -mapreduce.task.io.sort.mb: 100
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(999) -soft limit at 83886080
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1000) -bufstart = 0; bufvoid = 104857600
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1001) -kvstart = 26214396; length = 6553600
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(403) -Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1460) -Starting flush of map output
+2020-07-13 17:41:10 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(456) -map task executor complete.
+2020-07-13 17:41:10 [ WARN] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(560) -job_local2089045160_0001
+java.lang.Exception: java.io.IOException: Type mismatch in value from map: expected org.apache.hadoop.io.Text, received org.apache.hadoop.io.IntWritable
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.io.IOException: Type mismatch in value from map: expected org.apache.hadoop.io.Text, received org.apache.hadoop.io.IntWritable
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.collect(MapTask.java:1079)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:715)
+	at org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl.write(TaskInputOutputContextImpl.java:89)
+	at org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context.write(WrappedMapper.java:112)
+	at WordCountMap.map(WordCountMap.java:22)
+	at WordCountMap.map(WordCountMap.java:14)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2020-07-13 17:41:11 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1360) -Job job_local2089045160_0001 running in uber mode : false
+2020-07-13 17:41:11 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1367) - map 0% reduce 0%
+2020-07-13 17:41:11 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1380) -Job job_local2089045160_0001 failed with state FAILED due to: NA
+2020-07-13 17:41:11 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1385) -Counters: 0
+2020-07-13 17:42:51 [ WARN] - org.apache.hadoop.util.NativeCodeLoader -NativeCodeLoader.java(62) -Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-07-13 17:42:51 [ INFO] - org.apache.hadoop.conf.Configuration.deprecation -Configuration.java(1173) -session.id is deprecated. Instead, use dfs.metrics.session-id
+2020-07-13 17:42:51 [ INFO] - org.apache.hadoop.metrics.jvm.JvmMetrics -JvmMetrics.java(76) -Initializing JVM Metrics with processName=JobTracker, sessionId=
+2020-07-13 17:42:52 [ WARN] - org.apache.hadoop.mapreduce.JobResourceUploader -JobResourceUploader.java(64) -Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-07-13 17:42:52 [ WARN] - org.apache.hadoop.mapreduce.JobResourceUploader -JobResourceUploader.java(171) -No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2020-07-13 17:42:52 [ INFO] - org.apache.hadoop.mapreduce.lib.input.FileInputFormat -FileInputFormat.java(283) -Total input paths to process : 1
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.JobSubmitter -JobSubmitter.java(198) -number of splits:1
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.JobSubmitter -JobSubmitter.java(287) -Submitting tokens for job: job_local715437035_0001
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1294) -The url to track the job: http://localhost:8080/
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1339) -Running job: job_local715437035_0001
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(471) -OutputCommitter set in config null
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter -FileOutputCommitter.java(108) -File Output Committer Algorithm version is 1
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(489) -OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(448) -Waiting for map tasks
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(224) -Starting task: attempt_local715437035_0001_m_000000_0
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter -FileOutputCommitter.java(108) -File Output Committer Algorithm version is 1
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.yarn.util.ProcfsBasedProcessTree -ProcfsBasedProcessTree.java(192) -ProcfsBasedProcessTree currently is supported only on Linux.
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.Task -Task.java(612) - Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@62ce492a
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(756) -Processing split: file:/C:/Users/Administrator/Desktop/mapreduce/input/a.txt:0+22
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1205) -(EQUATOR) 0 kvi 26214396(104857584)
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(998) -mapreduce.task.io.sort.mb: 100
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(999) -soft limit at 83886080
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1000) -bufstart = 0; bufvoid = 104857600
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1001) -kvstart = 26214396; length = 6553600
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(403) -Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(591) -
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1460) -Starting flush of map output
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1482) -Spilling map output
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1483) -bufstart = 0; bufend = 60; bufvoid = 104857600
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1485) -kvstart = 26214396(104857584); kvend = 26214360(104857440); length = 37/6553600
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1667) -Finished spill 0
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.Task -Task.java(1038) -Task:attempt_local715437035_0001_m_000000_0 is done. And is in the process of committing
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(591) -map
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.Task -Task.java(1158) -Task 'attempt_local715437035_0001_m_000000_0' done.
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(249) -Finishing task: attempt_local715437035_0001_m_000000_0
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(456) -map task executor complete.
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(448) -Waiting for reduce tasks
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(302) -Starting task: attempt_local715437035_0001_r_000000_0
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter -FileOutputCommitter.java(108) -File Output Committer Algorithm version is 1
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.yarn.util.ProcfsBasedProcessTree -ProcfsBasedProcessTree.java(192) -ProcfsBasedProcessTree currently is supported only on Linux.
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.Task -Task.java(612) - Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@76700b3c
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.ReduceTask -ReduceTask.java(362) -Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@5be88ab3
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl -MergeManagerImpl.java(197) -MergerManager: memoryLimit=2582590208, maxSingleShuffleLimit=645647552, mergeThreshold=1704509568, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.EventFetcher -EventFetcher.java(61) -attempt_local715437035_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.LocalFetcher -LocalFetcher.java(144) -localfetcher#1 about to shuffle output of map attempt_local715437035_0001_m_000000_0 decomp: 82 len: 86 to MEMORY
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput -InMemoryMapOutput.java(100) -Read 82 bytes from map-output for attempt_local715437035_0001_m_000000_0
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl -MergeManagerImpl.java(315) -closeInMemoryFile -> map-output of size: 82, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->82
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.EventFetcher -EventFetcher.java(76) -EventFetcher is interrupted.. Returning
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(591) -1 / 1 copied.
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl -MergeManagerImpl.java(687) -finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.Merger -Merger.java(606) -Merging 1 sorted segments
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.Merger -Merger.java(705) -Down to the last merge-pass, with 1 segments left of total size: 78 bytes
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl -MergeManagerImpl.java(754) -Merged 1 segments, 82 bytes to disk to satisfy reduce memory limit
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl -MergeManagerImpl.java(784) -Merging 1 files, 86 bytes from disk
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl -MergeManagerImpl.java(799) -Merging 0 segments, 0 bytes from memory into reduce
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.Merger -Merger.java(606) -Merging 1 sorted segments
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.Merger -Merger.java(705) -Down to the last merge-pass, with 1 segments left of total size: 78 bytes
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(591) -1 / 1 copied.
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.conf.Configuration.deprecation -Configuration.java(1173) -mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2020-07-13 17:42:53 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(456) -reduce task executor complete.
+2020-07-13 17:42:54 [ WARN] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(560) -job_local715437035_0001
+java.lang.Exception: java.lang.ClassCastException: org.apache.hadoop.io.Text cannot be cast to javax.xml.soap.Text
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:529)
+Caused by: java.lang.ClassCastException: org.apache.hadoop.io.Text cannot be cast to javax.xml.soap.Text
+	at WordCountReduce.reduce(WordCountReduce.java:15)
+	at org.apache.hadoop.mapreduce.Reducer.run(Reducer.java:171)
+	at org.apache.hadoop.mapred.ReduceTask.runNewReducer(ReduceTask.java:627)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:389)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$ReduceTaskRunnable.run(LocalJobRunner.java:319)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2020-07-13 17:42:54 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1360) -Job job_local715437035_0001 running in uber mode : false
+2020-07-13 17:42:54 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1367) - map 100% reduce 0%
+2020-07-13 17:42:54 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1380) -Job job_local715437035_0001 failed with state FAILED due to: NA
+2020-07-13 17:42:54 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1385) -Counters: 30
+	File System Counters
+		FILE: Number of bytes read=199
+		FILE: Number of bytes written=294729
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=3
+		Map output records=10
+		Map output bytes=60
+		Map output materialized bytes=86
+		Input split bytes=123
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=86
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=10
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=249561088
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=22
+	File Output Format Counters 
+		Bytes Written=0
+2020-07-13 17:43:30 [ WARN] - org.apache.hadoop.util.NativeCodeLoader -NativeCodeLoader.java(62) -Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-07-13 17:43:30 [ INFO] - org.apache.hadoop.conf.Configuration.deprecation -Configuration.java(1173) -session.id is deprecated. Instead, use dfs.metrics.session-id
+2020-07-13 17:43:30 [ INFO] - org.apache.hadoop.metrics.jvm.JvmMetrics -JvmMetrics.java(76) -Initializing JVM Metrics with processName=JobTracker, sessionId=
+2020-07-13 17:43:31 [ WARN] - org.apache.hadoop.mapreduce.JobResourceUploader -JobResourceUploader.java(64) -Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-07-13 17:43:31 [ WARN] - org.apache.hadoop.mapreduce.JobResourceUploader -JobResourceUploader.java(171) -No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2020-07-13 17:43:31 [ INFO] - org.apache.hadoop.mapreduce.lib.input.FileInputFormat -FileInputFormat.java(283) -Total input paths to process : 1
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapreduce.JobSubmitter -JobSubmitter.java(198) -number of splits:1
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapreduce.JobSubmitter -JobSubmitter.java(287) -Submitting tokens for job: job_local1644801912_0001
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1294) -The url to track the job: http://localhost:8080/
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1339) -Running job: job_local1644801912_0001
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(471) -OutputCommitter set in config null
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter -FileOutputCommitter.java(108) -File Output Committer Algorithm version is 1
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(489) -OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(448) -Waiting for map tasks
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(224) -Starting task: attempt_local1644801912_0001_m_000000_0
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter -FileOutputCommitter.java(108) -File Output Committer Algorithm version is 1
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.yarn.util.ProcfsBasedProcessTree -ProcfsBasedProcessTree.java(192) -ProcfsBasedProcessTree currently is supported only on Linux.
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.Task -Task.java(612) - Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@56c06e7f
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(756) -Processing split: file:/C:/Users/Administrator/Desktop/mapreduce/input/a.txt:0+22
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1205) -(EQUATOR) 0 kvi 26214396(104857584)
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(998) -mapreduce.task.io.sort.mb: 100
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(999) -soft limit at 83886080
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1000) -bufstart = 0; bufvoid = 104857600
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1001) -kvstart = 26214396; length = 6553600
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(403) -Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(591) -
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1460) -Starting flush of map output
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1482) -Spilling map output
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1483) -bufstart = 0; bufend = 60; bufvoid = 104857600
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1485) -kvstart = 26214396(104857584); kvend = 26214360(104857440); length = 37/6553600
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.MapTask -MapTask.java(1667) -Finished spill 0
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.Task -Task.java(1038) -Task:attempt_local1644801912_0001_m_000000_0 is done. And is in the process of committing
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(591) -map
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.Task -Task.java(1158) -Task 'attempt_local1644801912_0001_m_000000_0' done.
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(249) -Finishing task: attempt_local1644801912_0001_m_000000_0
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(456) -map task executor complete.
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(448) -Waiting for reduce tasks
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(302) -Starting task: attempt_local1644801912_0001_r_000000_0
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter -FileOutputCommitter.java(108) -File Output Committer Algorithm version is 1
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.yarn.util.ProcfsBasedProcessTree -ProcfsBasedProcessTree.java(192) -ProcfsBasedProcessTree currently is supported only on Linux.
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.Task -Task.java(612) - Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@433248bd
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapred.ReduceTask -ReduceTask.java(362) -Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@1015c783
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl -MergeManagerImpl.java(197) -MergerManager: memoryLimit=2582590208, maxSingleShuffleLimit=645647552, mergeThreshold=1704509568, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2020-07-13 17:43:32 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.EventFetcher -EventFetcher.java(61) -attempt_local1644801912_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.LocalFetcher -LocalFetcher.java(144) -localfetcher#1 about to shuffle output of map attempt_local1644801912_0001_m_000000_0 decomp: 82 len: 86 to MEMORY
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput -InMemoryMapOutput.java(100) -Read 82 bytes from map-output for attempt_local1644801912_0001_m_000000_0
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl -MergeManagerImpl.java(315) -closeInMemoryFile -> map-output of size: 82, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->82
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.EventFetcher -EventFetcher.java(76) -EventFetcher is interrupted.. Returning
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(591) -1 / 1 copied.
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl -MergeManagerImpl.java(687) -finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.Merger -Merger.java(606) -Merging 1 sorted segments
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.Merger -Merger.java(705) -Down to the last merge-pass, with 1 segments left of total size: 78 bytes
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl -MergeManagerImpl.java(754) -Merged 1 segments, 82 bytes to disk to satisfy reduce memory limit
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl -MergeManagerImpl.java(784) -Merging 1 files, 86 bytes from disk
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl -MergeManagerImpl.java(799) -Merging 0 segments, 0 bytes from memory into reduce
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.Merger -Merger.java(606) -Merging 1 sorted segments
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.Merger -Merger.java(705) -Down to the last merge-pass, with 1 segments left of total size: 78 bytes
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(591) -1 / 1 copied.
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.conf.Configuration.deprecation -Configuration.java(1173) -mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.Task -Task.java(1038) -Task:attempt_local1644801912_0001_r_000000_0 is done. And is in the process of committing
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(591) -1 / 1 copied.
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.Task -Task.java(1199) -Task attempt_local1644801912_0001_r_000000_0 is allowed to commit now
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter -FileOutputCommitter.java(535) -Saved output of task 'attempt_local1644801912_0001_r_000000_0' to file:/C:/Users/Administrator/Desktop/mapreduce/output/_temporary/0/task_local1644801912_0001_r_000000
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(591) -reduce > reduce
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.Task -Task.java(1158) -Task 'attempt_local1644801912_0001_r_000000_0' done.
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(325) -Finishing task: attempt_local1644801912_0001_r_000000_0
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapred.LocalJobRunner -LocalJobRunner.java(456) -reduce task executor complete.
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1360) -Job job_local1644801912_0001 running in uber mode : false
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1367) - map 100% reduce 100%
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1378) -Job job_local1644801912_0001 completed successfully
+2020-07-13 17:43:33 [ INFO] - org.apache.hadoop.mapreduce.Job -Job.java(1385) -Counters: 30
+	File System Counters
+		FILE: Number of bytes read=602
+		FILE: Number of bytes written=592616
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=3
+		Map output records=10
+		Map output bytes=60
+		Map output materialized bytes=86
+		Input split bytes=123
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=6
+		Reduce shuffle bytes=86
+		Reduce input records=10
+		Reduce output records=6
+		Spilled Records=20
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=499122176
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=22
+	File Output Format Counters 
+		Bytes Written=36
