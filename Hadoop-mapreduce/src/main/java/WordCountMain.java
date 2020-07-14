@@ -10,27 +10,27 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 /**
  * 启动类
- *  本地运行的话 要讲maperd-site.xml 配置改成  mapreduce.framework.name   => local
- *  并且讲core-site.xml  hdfs-site.xml 修改
+ * 本地运行的话 要讲maperd-site.xml 配置改成  mapreduce.framework.name   => local
+ * 并且讲core-site.xml  hdfs-site.xml 修改
  */
 public class WordCountMain {
 
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
 
-        if (args.length!= 2 || null == args){
+        if (args.length != 2 || null == args) {
             System.out.println("参数错误");
-        System.exit(0);
+            System.exit(0);
         }
         // 配置类
-        Configuration configuration =new Configuration();
+        Configuration configuration = new Configuration();
         // 任务实例化                            任务起名字 可以根本任务具体起名
         Job job = Job.getInstance(configuration, WordCountMain.class.getSimpleName());
         // 打包jar
         job.setJarByClass(WordCountMain.class);
         // 设置 输入、输出路径
-        FileInputFormat.setInputPaths(job,new Path(args[0]));
-        FileOutputFormat.setOutputPath(job,new Path(args[1]));
+        FileInputFormat.setInputPaths(job, new Path(args[0]));
+        FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
         // 设置map /reduce 阶段的类
         job.setMapperClass(WordCountMap.class);
